@@ -9,32 +9,32 @@ require '../vendor/autoload.php';
 require '../autoload.php';
 
 // Initialize Presshub Client object.
-$api = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
+$client = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
 
 // Get templates
-$result = $api->getTemplates()
+$result = $client->getTemplates()
   ->execute();
 
 // Get template info
-$result = $api->getTemplate('basic')
+$result = $client->getTemplate('basic')
   ->execute();
 
 // Get services
-$result = $api->getServices()
+$result = $client->getServices()
   ->execute();
 
 // Get service info
-$result = $api->getService('AppleNews')
+$result = $client->getService('AppleNews')
   ->execute();
 
 // Get Apple News sections
-$result = $api->getAppleNewsSections()
+$result = $client->getAppleNewsSections()
   ->execute();
 
 // Get articles
-$result = $api->getArticles()
+$result = $client->getArticles()
   ->execute();
 
 // Get article info
-$result = $api->getArticle('POST_ID')
+$result = $client->getArticle('POST_ID')
   ->execute();

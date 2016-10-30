@@ -77,7 +77,7 @@ $connect_timeout = 0;
 $endpoint = "https://api.presshub.io/v1";
 
 // Initialize Presshub Client object.
-$api = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
+$client = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
 ```
 
 ##### Preview Article
@@ -85,7 +85,7 @@ $api = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
 ```php
 // Generate previewable files, more services can be added.
 // Please follow example: 'FacebookIA' => []
-$result = $api->setTemplate($template)
+$result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => []
@@ -102,7 +102,7 @@ var_dump($result);
 // Publish article to AppleNews and Twitter.
 // More can be added. See Get Services callback.
 // $template - is a Presshub Template object. See above for an example.
-$result = $api->setTemplate($template)
+$result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => []
@@ -118,7 +118,7 @@ var_dump($result);
 ```php
 // Update article in AppleNews and Twitter
 // Please note not all services support update operation via API.
-$result = $api->setTemplate($template)
+$result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => []
@@ -135,7 +135,7 @@ var_dump($result);
 ```php
 // Delete article from AppleNews and Twitter
 // Please note not all services support delete operation via API.
-$result = $api->setServices([
+$result = $client->setServices([
       'AppleNews' => [],
       'Twitter'   => []
   ])

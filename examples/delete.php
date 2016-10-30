@@ -9,11 +9,11 @@ require '../vendor/autoload.php';
 require '../autoload.php';
 
 // Initialize Presshub Client object.
-$api = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
+$client = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
 
 // Delete article from AppleNews and Twitter
 // Please note not all services support delete operation via API.
-$result = $api->setServices([
+$result = $client->setServices([
       'AppleNews' => [],
       'Twitter'   => []
   ])

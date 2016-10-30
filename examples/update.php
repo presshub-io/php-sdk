@@ -39,11 +39,11 @@ $template = Presshub\Template::create()
   );
 
 // Initialize Presshub Client object.
-$api = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
+$client = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
 
 // Update article in AppleNews and Twitter
 // Please note not all services support update operation via API.
-$result = $api->setTemplate($template)
+$result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => []
