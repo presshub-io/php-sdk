@@ -1,0 +1,25 @@
+{
+    "name": "presshub-io/php-sdk",
+    "description": "Presshub PHP SDK. Content distribution API for publishers.",
+    "homepage": "https://github.com/presshub-io/php-sdk",
+    "license": "MIT",
+    "keywords": [
+        "php", "media", "news", "api", "client", "framework", "social",
+        "http", "json", "requests", "rest", "restful", "web service",
+        "press", "social media"
+    ],
+    "authors": [
+        {
+            "name": "Presshub, Inc"
+        }
+    ],
+    "require": {
+        "php-curl-class/php-curl-class": "~7.0",
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Presshub\\": "src/Presshub/"
+        }
+    }
+}
