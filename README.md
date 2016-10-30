@@ -77,7 +77,7 @@ $connect_timeout = 0;
 $endpoint = "https://api.presshub.io/v1";
 
 // Initialize Presshub Client object.
-$presshub_api = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
+$api = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
 ```
 
 ##### Preview Article
@@ -85,7 +85,7 @@ $presshub_api = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpo
 ```php
 // Generate previewable files, more services can be added.
 // Please follow example: 'FacebookIA' => []
-$result = $presshub_api->setTemplate($template)
+$result = $api->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => []
