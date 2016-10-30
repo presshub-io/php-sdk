@@ -60,7 +60,7 @@ $template = Presshub\Template::create()
 ## Presshub Client
 
 ```php
-$api_key_id = "YOUT_PRESSHUB_API_KEY";
+$api_key_id = "YOUR_PRESSHUB_API_KEY";
 
 // maximum amount of time in seconds to which the execution of individual
 // cURL extension function calls will be limited. Note that the value 
