@@ -19,7 +19,7 @@ class Template extends Base {
   /**
    * @var Presshub.io library version.
    */
-  public $version = '1.0';
+  public $version = '1.1';
 
   /**
    * @var Article title.
