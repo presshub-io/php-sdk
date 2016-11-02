@@ -88,7 +88,10 @@ $client = new Presshub\Client($api_key, $timeout, $connect_timeout, $endpoint);
 $result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
-      'Twitter'   => []
+      'Twitter'   => [
+        // When empty article title will be used.
+        "message" => "This is how you could override the title"
+      ]
   ])
   ->preview()
   ->execute();
@@ -105,7 +108,10 @@ var_dump($result);
 $result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
-      'Twitter'   => []
+      'Twitter'   => [
+        // When empty article title will be used.
+        "message" => "This is how you could override the title"
+      ]
   ])
   ->publish()
   ->execute();
@@ -121,7 +127,10 @@ var_dump($result);
 $result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
-      'Twitter'   => []
+      'Twitter'   => [
+        // When empty article title will be used.
+        "message" => "This is how you could override the title"
+      ]
   ])
   // Presshub publication ID.
   ->upadte('POST_ID')

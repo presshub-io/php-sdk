@@ -46,7 +46,9 @@ $client = new Presshub\Client('YOUR_PRESSHUB_API_KEY');
 $result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
-      'Twitter'   => []
+      'Twitter'   => [
+        "message" => "This is how you could override the title"
+      ]
   ])
   ->publish()
   ->execute();
