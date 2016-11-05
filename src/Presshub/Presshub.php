@@ -1,8 +1,9 @@
 <?php
 
 /**
- * @file
  * Presshub PHP SDK (Client) library.
+ * MIT License.
+ * (c) Presshub Software, Inc 2016
  */
 
 namespace Presshub;
