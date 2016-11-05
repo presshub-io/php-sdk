@@ -133,7 +133,7 @@ $result = $client->setTemplate($template)
       ]
   ])
   // Presshub publication ID.
-  ->upadte('POST_ID')
+  ->update('POST_ID')
   ->execute();
 
 var_dump($result);

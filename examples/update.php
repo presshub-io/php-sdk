@@ -50,7 +50,7 @@ $result = $client->setTemplate($template)
         "message" => "This is how you could override the title"
       ]
   ])
-  ->upadte('POST_ID')
+  ->update('POST_ID')
   ->execute();
 
 var_dump($result);
