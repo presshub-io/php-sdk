@@ -6,7 +6,7 @@ function autoload303922ad6a25fedb016bdec114d170d6($class) {
     static $classes = null;
     if ($classes === null) {
         $classes = array(
-            'presshub\\client' => '/src/Presshub/Presshub.php',
+            'presshub\\client' => '/src/Presshub/Client.php',
             'presshub\\template' => '/src/Presshub/Template.php',
             'presshub\\template\\base' => '/src/Presshub/Template/Base.php',
             'presshub\\template\\component' => '/src/Presshub/Template/Component.php',

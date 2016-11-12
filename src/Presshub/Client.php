@@ -13,7 +13,7 @@ namespace Presshub;
  */
 class Client {
 
-  protected $version = '1.1';
+  protected $version = '1.2';
   protected $api_endpoint_url;
   protected $template;
   protected $services;
