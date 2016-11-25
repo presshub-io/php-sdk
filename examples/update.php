@@ -18,6 +18,12 @@ $template = Presshub\Template::create()
   ->setTemplate( 'basic' )
   ->addComponent(
     Presshub\Template\Component::create()
+      ->setMap('category')
+      ->setValue('Test Category')
+      ->setProps()
+  )
+  ->addComponent(
+    Presshub\Template\Component::create()
       ->setMap('byline')
       ->setValue('By Author Name')
       ->setProps()
