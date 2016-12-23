@@ -53,7 +53,12 @@ $result = $client->setTemplate($template)
   ->setServices([
       'AppleNews' => [],
       'Twitter'   => [
-        "message" => "This is how you could override the title"
+        "message" => "This is how you could override the title",
+        // Specify images - up to 5 supported.
+        "media"   => [
+          "https://images.unsplash.com/photo-1451153378752-16ef2b36ad05?dpr=1&auto=format&fit=crop&w=1500&h=1004&q=80&cs=tinysrgb&crop=",
+          "https://images.unsplash.com/photo-1480129043491-6d5a4785b65c?dpr=1&auto=format&fit=crop&w=1500&h=1280&q=80&cs=tinysrgb&crop="
+        ],
       ]
   ])
   ->publish()
